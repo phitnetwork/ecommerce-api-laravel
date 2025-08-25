@@ -7,7 +7,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: Laravel12
+    container_name: Iff_ecommercetest
     restart: unless-stopped
     tty: true
     expose:
@@ -39,8 +39,8 @@ services:
     image: mariadb:latest
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: l4t_db
-      MYSQL_USER: l4t_user
+      MYSQL_DATABASE: iff_ecommercetest_db
+      MYSQL_USER: iff_ecommercetest_user
       MYSQL_PASSWORD: password
     ports:
       - "3306:3306"
