@@ -18,9 +18,9 @@ class DatabaseSeeder extends Seeder
     {
         // utente admin di test
         // Utente admin per Filament (dati dal .env, con fallback per il portfolio pubblico)
-        $email = env('SEED_ADMIN_EMAIL', 'admin@example.com');
-        $name  = env('SEED_ADMIN_NAME', 'Admin');
-        $pass  = env('SEED_ADMIN_PASSWORD', 'password');
+        $email = config('seed.admin_email');
+        $name  = config('seed.admin_name');
+        $pass  = config('seed.admin_password');
 
         User::updateOrCreate(
             ['email' => $email],
