@@ -2,6 +2,11 @@
 
 API REST per un e-commerce di prodotti **digitali** (catalogo, filtri, paginazione, CRUD, test).
 
+⚠️ **Attenzione**  
+Questo progetto è stato sviluppato esclusivamente come test tecnico.  
+Qualsiasi utilizzo diverso dalla valutazione delle competenze dell’autore non è autorizzato.  
+Tutti i diritti riservati.
+
 ---
 
 ## ✅ Requisiti
