@@ -17,11 +17,19 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         // utente admin di test
-        User::factory()->create([
-            'name' => 'Alex',
-            'email' => 'info@phitnetwork.com',
-            'password' => Hash::make('password'),
-        ]);
+        // Utente admin per Filament (dati dal .env, con fallback per il portfolio pubblico)
+        $email = env('SEED_ADMIN_EMAIL', 'admin@example.com');
+        $name  = env('SEED_ADMIN_NAME', 'Admin');
+        $pass  = env('SEED_ADMIN_PASSWORD', 'password');
+
+        User::updateOrCreate(
+            ['email' => $email],
+            [
+                'name'              => $name,
+                'email_verified_at' => now(),
+                'password'          => Hash::make($pass),
+            ],
+        );
 
         // categorie
         $categories = [
