@@ -177,3 +177,9 @@ curl -s -X PATCH 'http://localhost:8000/api/products/1' \
 # Delete
 curl -i -X DELETE 'http://localhost:8000/api/products/1'
 ```
+
+## 🤖 Nota sull'utilizzo di AI
+
+Per lo sviluppo di questo progetto ho utilizzato un assistente virtuale (AI) come supporto nella generazione di boilerplate e documentazione. La progettazione, la struttura del codice e le decisioni architetturali restano comunque frutto di valutazioni personali.  
+
+L'obiettivo è mostrare non solo competenze tecniche, ma anche la capacità di integrare in modo consapevole strumenti moderni a supporto dello sviluppo.
