@@ -2,10 +2,9 @@
 
 API REST per un e-commerce di prodotti **digitali** (catalogo, filtri, paginazione, CRUD, test).
 
-⚠️ **Attenzione**  
-Questo progetto è stato sviluppato esclusivamente come test tecnico.  
-Qualsiasi utilizzo diverso dalla valutazione delle competenze dell’autore non è autorizzato.  
-Tutti i diritti riservati.
+ℹ️ **About**  
+Questo repository nasce come esercizio tecnico per mostrare approccio, struttura e qualità del codice in Laravel 12 con Filament 4. 
+Non è destinato all’uso in produzione, ma a scopo dimostrativo e valutativo delle competenze dell’autore.
 
 ---
 
@@ -30,7 +29,7 @@ php artisan serve
 
 **(Opzionale)** imposta nel `.env` le credenziali dell'utente seed:
 ```
-SEED_ADMIN_EMAIL=info@phitnetwork.com
+SEED_ADMIN_EMAIL=tuaemail@dominio.com
 SEED_ADMIN_PASSWORD=password
 ```
 
